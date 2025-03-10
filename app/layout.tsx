@@ -1,21 +1,41 @@
-import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Tangerine, Roboto, Open_Sans, Poppins, Fira_Sans } from "next/font/google";
 import "./globals.css";
+import type { Metadata } from "next";
 import Firstnav_76a62d0d_2f49_4a3b_88e5_ba248caa79a4 from "@/components/76a62d0d-2f49-4a3b-88e5-ba248caa79a4/page";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+const tangerine = Tangerine({
+variable: "--font-tangerine",
+subsets: ["latin"],
+weight: ["400"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const roboto = Roboto({
+variable: "--font-roboto",
+subsets: ["latin"],
+
+});
+
+const openSans = Open_Sans({
+variable: "--font-openSans",
+subsets: ["latin"],
+
+});
+
+const poppins = Poppins({
+variable: "--font-poppins",
+subsets: ["latin"],
+weight: ["300", "400", "500"],
+});
+
+const firaSans = Fira_Sans({
+variable: "--font-firaSans",
+subsets: ["latin"],
+weight: ["300", "400", "500"],
 });
 
 export const metadata: Metadata = {
-  title: "new website",
-  description: "new website description",
+  title: "first website",
+  description: "the best website ever",
 };
 
 export default function RootLayout({
@@ -26,16 +46,16 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${tangerine.variable} ${roboto.variable} ${openSans.variable} ${poppins.variable} ${firaSans.variable} antialiased`}
       >
-        <Firstnav_76a62d0d_2f49_4a3b_88e5_ba248caa79a4   
+        <Firstnav_76a62d0d_2f49_4a3b_88e5_ba248caa79a4 
 data={{
   "category": "navbars",
   "mainElProps": {},
   "styleId": "____23661674-a82f-4824-9b6a-4f302d276fb8",
   "menu": [
     {
-      "label": "nav 1",
+      "label": "home",
       "link": "/",
       "subMenu": [
         {
@@ -45,8 +65,12 @@ data={{
       ]
     },
     {
-      "label": "menu item 2",
-      "link": "/"
+      "label": "about",
+      "link": "/about"
+    },
+    {
+      "label": "products",
+      "link": "/products"
     }
   ]
 }}
@@ -54,7 +78,7 @@ data={{
 
         {children}
 
-        <Firstnav_76a62d0d_2f49_4a3b_88e5_ba248caa79a4   
+        <Firstnav_76a62d0d_2f49_4a3b_88e5_ba248caa79a4 
 data={{
   "category": "navbars",
   "mainElProps": {},
