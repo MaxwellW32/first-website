@@ -31,7 +31,7 @@ data={{
   "styleId": "____36876f1a-4b60-492b-a41a-b99840b738ed",
   "menu": [
     {
-      "label": "nav",
+      "label": "home",
       "link": "/",
       "subMenu": [
         {
@@ -41,8 +41,12 @@ data={{
       ]
     },
     {
-      "label": "menu item 2",
-      "link": "/"
+      "label": "about",
+      "link": "about"
+    },
+    {
+      "label": "contact",
+      "link": "contact"
     }
   ]
 }}
