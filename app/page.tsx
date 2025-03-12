@@ -18,7 +18,7 @@ data={{
 data={{
   "category": "navbars",
   "mainElProps": {
-    "className": "pink"
+    "className": "pink barriecitoFont "
   },
   "styleId": "____cad39b18-af04-4bf5-b171-3bd90cc89591",
   "menu": [
