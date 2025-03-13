@@ -45,7 +45,7 @@ data={{
 data={{
   "category": "navbars",
   "mainElProps": {
-    "className": "scale",
+    "className": "scale meowScript",
     "id": "blue"
   },
   "styleId": "____ea092261-1588-4bd0-b6b1-faabbc655084",
